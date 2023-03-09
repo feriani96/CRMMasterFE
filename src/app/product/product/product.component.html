@@ -1,0 +1,32 @@
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+       <div class="section-header">
+          <h2>Welcome</h2>
+          <p>Welcome To <span>Our Products</span></p>
+       </div>
+       
+      <ul>
+         <li *ngFor="let product of productsDto">
+           
+            <div class="card " style="width: 18rem;">
+              <img [src]="product.photo" alt="">
+               <div class="card-body">
+                 <h5 class="card-title" style="color: firebrick;">
+                 {{product.name}}
+                 </h5>
+                 <p class="card-text"><i class="bi bi-geo-alt-fill"></i> {{product.price}} </p>
+                 <p class="card-text"><i class="bi bi-telephone-fill"></i> {{product.favorite}}</p>
+                 <p class="card-text"><i class="bi bi-telephone-fill"></i> {{product.description}}</p>
+                 <p class="card-text"><i class="bi bi-telephone-fill"></i> {{product.stars}}</p>
+                 <p class="card-text"><i class="bi bi-telephone-fill"></i> {{product.supplier}}</p>
+                <!-- <button routerLink="/platelist/{{product.id}}" class="btn-book-a-table "><i class="bi bi-journal-text"></i> View Menu</button> -->
+                
+                  
+               </div>
+            </div>
+            
+         </li>
+      </ul>
+
+    </div>
+ </section>
